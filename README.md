@@ -9,4 +9,5 @@
 Как то так.
 все настройки в файле config.py в паке settings.
 
- pip install requests
+в консоли пишем pip install requests
+запускать main.py
