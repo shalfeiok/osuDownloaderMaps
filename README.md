@@ -11,3 +11,9 @@
 
 в консоли пишем pip install requests
 запускать main.py
+
+
+
+So it all works like this: Generates links to packs, and does not parse sequentially, empirically figured out that some links to bitmaps have a format, and for each link there are 4 manuals, one of them is the working one. When after forming requests subsequently are they in the files 200.txt and 400.txt, if not then a request to the server goes through them and receives a response 404 the page is saved or 200 that everything is good and we write it to the file 200.txt or 404.txt. When we received the answer 200 or 404, it does not matter, the result is written to the file 200.txt or 404.txt, so as not to make unnecessary requests in the future. After we checked all the links in fragments from 1 to 1580 (settings in config.py), then we download the files in turn by links or file 200.txt. Before downloading, first the directory, if such an archive already exists, then do not download, skip. After downloading, it is immediately renamed, since it receives a file name that is unsuitable for reading. Something like that. all settings in the config.py file in the settings pack.
+
+in the console, we write requests for installing pip, run main.py
